@@ -456,6 +456,17 @@ color: var(--clr-primary);
   margin-bottom: 1rem;
 }
 
+/* CTA MOBBILE*/
+@media screen and (max-width: 520px) {
+  .cta__wrapper h2{
+    font-size: 1.8rem;
+  }
+
+  .cta__wrapper p{
+    font-size: 1.2rem;
+  }
+}
+
 /* FOOTER */
 .footer{
   background-color: var(--clr-dark);
@@ -536,10 +547,24 @@ font-size: 2.5rem;
     bottom: .3rem;
     right: 2rem;
 }
+/* ABOUT BANNER MOBILE*/
+
+@media screen and (max-width:520px) {
+  .aboutBanner__left{
+    display: none;
+  }
+
+  .aboutBanner__right h1{
+    font-size: 4rem;
+  }
+
+  .aboutBanner__right ul li a{
+    font-size: 1.5rem;
+  }
+}
 
 /* LATEST STYLE BANNER */
 .latestBanner{
-  padding: 3rem;
   background-color: var(--clr-dark);
 }
 
@@ -552,8 +577,6 @@ font-size: 2.5rem;
   color: var(--clr-light);
   margin-bottom: 5rem;
   font-weight: 400;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -597,6 +620,90 @@ font-size: 2.5rem;
   margin-bottom: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+/* LATEST BANNER MOBILE */
+@media screen and (max-width: 520px) {
+
+  .latestBanner__wrapper{
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .latestBanner h2{
+    font-size: 3.5rem;
+    text-align: start;
+  }
+
+  .latestBanner h5{
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+  }
+}
+
+/* CATALOG PAGE BANNER */ 
+.catalogBanner__bg{
+  background:linear-gradient(rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5))
+  ,url(./img/catalog-banner.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* TO CENTER TEXT */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.catalogBanner h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+  text-shadow: var(--clr-dark);
+}
+
+.catalogBanner p{
+  font-size: 3rem;
+  line-height: 2.5rem;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+/*  INTERIOR PACKAGE BANNER */
+.package__wrapper h1{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+}
+.package__theme{
+  padding: 5rem;
+  display: flex;
+  gap: .5 rem;
+  flex-direction: row;
+
+  .package__left{
+    width: 500rem;
+    margin-left: 25rem;
+  }
+
+  .package__right h2{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 25rem;
+  margin-bottom: 1rem;
+  }
+
+  .package__right p{
+    text-align: justify;
+    margin-right: 25rem;
+  }
+
 }
 
 
