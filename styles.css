@@ -284,7 +284,7 @@ transition: all 0.5s ease;
     position: relative;
     content: " ";
     background-color: var(--clr-primary);
-    width: 20rem;
+    width: 15rem;
     height: .2rem;
     bottom: 1rem;
     right: 1rem;
@@ -466,6 +466,7 @@ color: var(--clr-primary);
     font-size: 1.2rem;
   }
 }
+
 
 /* FOOTER */
 .footer{
@@ -680,14 +681,12 @@ font-size: 2.5rem;
   text-align: center;
 }
 .package__theme{
-  padding: 5rem;
+  padding: 3rem 25rem;
   display: flex;
-  gap: .5 rem;
   flex-direction: row;
 
   .package__left{
     width: 500rem;
-    margin-left: 25rem;
   }
 
   .package__right h2{
@@ -695,16 +694,158 @@ font-size: 2.5rem;
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
-  margin-right: 25rem;
-  margin-bottom: 1rem;
   }
 
   .package__right p{
+    margin-top: 3rem;
     text-align: justify;
-    margin-right: 25rem;
+  }
+}
+
+.package__theme:nth-child(odd){
+  background-color: var(--clr-semilight);
+  flex-direction: row-reverse;
+  .package__right p{
+    padding-right: 9rem;
+  }
+
+  .package__left img{
+    padding-left: 6rem;
+  }
+}
+
+
+
+/* UPDATES BANNER*/
+.updatesBanner{
+  padding-top: 3rem;
+  align-items: center;
+
+}
+
+
+.updates__wrapper{
+  padding-right: 5rem;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+
+
+  .updates__left h1{
+    font-size: 6rem;
+    font-weight: 590;
+    color: var(--clr-primary);
+    text-align: center;
+  }
+
+
+  .updates__right img{
+    max-width: 350rem;
+  }
+
+  .updates__left p{
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 2rem;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT BANNER */
+.contactBanner{
+  padding: 15rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Contactcontent{
+  text-align: left;
+}
+.Contactcontent h2{
+  color: var(--clr-primary);
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+
+
+
+
+.contactContainer .box{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contactContainer .icon{
+  color: var(--clr-secondary);
+  width: 30px;
+  height: 30px;
+}
+
+.contactContainer .text{
+  color: var(--clr-light);
+}
+
+.contactContainer .box{
+  background-color: var(--clr-dark);
+}
+
+
+
+
 
 
 
@@ -732,11 +873,15 @@ font-size: 2.5rem;
 }
 
 
-
 .btn--nobg{
 color: var(--clr-dark);
 }
 
 .btn--nobg:hover{
   color: var(--clr-primary);
+}
+
+.btn.bg--semi-light-send{
+  background-color: var(--clr-dark);
+  color: var(--clr-semilight);
 }
