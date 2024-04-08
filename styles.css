@@ -284,7 +284,7 @@ transition: all 0.5s ease;
     position: relative;
     content: " ";
     background-color: var(--clr-primary);
-    width: 15rem;
+    width: 16rem;
     height: .2rem;
     bottom: 1rem;
     right: 1rem;
@@ -310,7 +310,7 @@ transition: all 0.5s ease;
     flex-direction: column;
   }
   .homeBanner__left ul li:last-child::before{
-   width: 10rem;
+   width: 11rem;
 }
 
 .homeBanner__right{
@@ -383,7 +383,7 @@ color: var(--clr-primary);
     position: relative;
     content: " ";
     background-color: var(--clr-primary);
-    width: 123rem;
+    width: 126rem;
     height: .2rem;  
     bottom: 1rem;
     left: 1rem;
@@ -697,6 +697,12 @@ font-size: 2.5rem;
   max-width: 100%;
 }
 
+.package__right h2{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  }
 
 .package__theme{
   display: flex;
@@ -704,13 +710,6 @@ font-size: 2.5rem;
 
   .package__left{
     width: 500rem;
-  }
-
-  .package__right h2{
-  color: var(--clr-primary);
-  font-size: 6rem;
-  font-weight: 700;
-  text-align: center;
   }
 
   .package__right {
@@ -745,20 +744,51 @@ font-size: 2.5rem;
   right: 100%;
 }
 
+
+
+
+
+/* CATALOG BANNER MOBILE */
 @media screen and (max-width: 520px) {
+  .package__theme{
+    display: grid;
+    grid-template-columns: 390px;
+
+  }
   .catalogBanner h1{
     font-size: 4rem;
   }
   .catalogBanner p{
     font-size: 2rem;
   }
+
+  .package__wrapper h1{
+    font-size: 4.5rem;
+  }
+
+  .package__left img{
+    margin-bottom: 0rem;
+    display: flex;
+    width: 37rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .package__right {
+    padding: 0rem 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .package__right h2{
+    margin-right: 0rem;
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 5rem;
+
+  }
+
 }
-
-
-
-
-
-
 
 
 
@@ -811,13 +841,13 @@ color: var(--clr-primary);
   padding: 0 1rem;
   display: grid;
   grid-template-columns: 45rem 45rem;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .bd__cards .bd__card{
   width :45rem;
   height: 25rem;
-  padding: 4rem ;
+  padding: 4rem;
   padding-bottom: 2rem;
 background-color: var(--clr-semilight);
 }
@@ -887,29 +917,122 @@ background-color: var(--clr-semilight);
   font-weight: 500;
 }
 
+
+
+
+/* UPDATES MOBILE BANNER*/
 @media screen and (max-width: 520px) {
-  .updatesBanner img{
+  /* LATEST BANNER MOBILE */
+  .update img{
     display: none;
   }
-  .projs__wrapper{
+  .recent__wrapper{
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
   }
-  @media (max-width: 520px) {
-    .bdBanner_wrapper{
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 6rem;
-
-    }
-  }
-  .update_right{
+  .updates__right img{
     display: none;
   }
+  .updates__wrapper{
+    gap: 0rem;
+  }
+  .updates__left {
+    text-align: center;
+    justify-content: center;
+  }
+  .updates__left h1{
+    font-size: 4rem;
+  }
+  .updates__left p{
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  /*BUILDING DESIGN*/
+  .bdBanner{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .bd__wrapper{
+    display: grid;
+  grid-template-columns: 1fr;
+
+  }
+
+  .bd__cards{
+    padding-left: 0;
+    grid-template-columns: 190px 190px;
+    grid-gap: 5px;
+  } 
+
+  .bd__cards .bd__card{
+  width : 18rem;
+  height: 25rem;
+  padding: 2rem;
+  }
+
+  .bd__cards .bd__card h2{
+    margin-bottom: .5rem;
+    font-weight: 800;
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  
+  
+  .bd__cards .bd__card p{
+    font-size: 1.6rem;
+    text-align: justify;
+    align-items: center;
+  }
+  
+  
+  
+  .bd__cards .bd__card a{
+    font-size: 2.8rem;
+    color: var(--clr-dark);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+
+  .bd__sidebar{
+    padding: 3rem 0;
+    padding-right: 2rem;
+  }
+  
+  .bd__sidebar ul li{
+    font-size: 20px;
+    margin-bottom: 1.1rem;  
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* RECENT PROJECTS MOBILE */
+.projs h2{
+  margin-bottom: 2rem;
+  font-size: 4.6rem;
 }
 
+  .projs__wrapper{
+  display: grid;
+  grid-template-columns:  4fr;
+  }
+
+  .projs__wrapper img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .projectCard ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
 
 
 
@@ -956,7 +1079,7 @@ width: 90%;
 border-bottom: 1px solid var(--clr-dark);
 } 
 .contact__form textarea{
-resize: vertical;
+resize: none;
 border: none;
 outline: none;
 background-color: transparent;
@@ -967,6 +1090,22 @@ margin-bottom: 2rem;
 
 
 
+.contact__form button{
+  width: 100%;
+  max-width: 61rem;
+  border-radius: 90rem;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  font-size: 2.1rem;
+  border: none;
+  outline: none;
+  letter-spacing: 2rem;
+}
+
+.contact__form button:hover{
+  background-color: var(--clr-primary);
+  color: var(--clr-dark);
+}
 
 .contact__form form{
   font-size: 2rem;
@@ -977,7 +1116,6 @@ margin-bottom: 2rem;
 }
 .contact__info h3{
   display: flex;
-  justify-content: center;
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -996,13 +1134,82 @@ margin-bottom: 2rem;
   letter-spacing: 1.5px;
 }
 
+
+
 .contact__info{
   padding: 40px 20px;
   background: var(--clr-dark);
   color: var(--clr-light);
   max-width: 100%;
   width: 70rem;
+  max-height: 41rem;
 }
+
+
+@media screen and (max-width: 520px) {
+  .contactBanner{
+    padding: 0 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .contactBanner h2{
+        font-size: 6.9rem;
+  }
+
+  .contact__info{
+    width: 35rem;
+  }
+
+  .contact__wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+  .contactBanner p{
+    font-size: 1.8rem;
+  }
+
+  .contact__form input{
+    width: 100%;
+  }
+
+  .contact__form textarea{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1039,17 +1246,5 @@ color: var(--clr-dark);
   color: var(--clr-primary);
 }
 
-.btn.bg--semi-light-send{
-    padding-left: 25.5rem;
-    padding-right: 25.5rem;
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  letter-spacing: 2rem;
-  text-align: center;
-}
-.btn.bg--semi-light-send:hover{
-  background-color: var(--clr-primary);
-  color: var(--clr-light);
-  letter-spacing: 2rem;
-  text-align: center;
-  }
+
+
